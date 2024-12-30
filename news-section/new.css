@@ -1,0 +1,411 @@
+/* news page */
+
+position: absolute;
+width: 1440px;
+height: 1185px;
+
+
+
+/* Group 9 */
+
+position: absolute;
+width: 1440px;
+height: 1185px;
+
+
+
+/* 🦆 icon "envelope closed" */
+
+position: absolute;
+width: 102.11px;
+height: 76.58px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 102.11px;
+height: 76.58px;
+
+background: #000000;
+
+
+/* Frame 1 */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+
+
+/* ny news 1 */
+
+position: absolute;
+width: 1440px;
+height: 1188px;
+left: 0px;
+top: 0px;
+
+background: url(ny news.png);
+
+
+/* Heading */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 15px 73px;
+gap: 463px;
+
+position: absolute;
+width: 1440px;
+height: 125px;
+left: calc(50% - 1440px/2);
+top: 0px;
+
+/* Black */
+background: rgba(5, 5, 6, 0.75);
+opacity: 0.7;
+
+
+/* Logo */
+
+width: 101px;
+height: 95px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 101px;
+height: 95px;
+left: 73px;
+top: 15px;
+
+background: #D9D9D9;
+
+
+/* Logo */
+
+position: absolute;
+width: 72px;
+height: 22px;
+left: 102px;
+top: 51px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+
+
+
+/* Sections */
+
+width: 696px;
+height: 43px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Home */
+
+position: absolute;
+width: 83px;
+height: 43px;
+left: 637px;
+top: 41px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+
+color: #FFFFFF;
+
+
+
+/* Fun And Games */
+
+position: absolute;
+width: 223px;
+height: 43px;
+left: 779px;
+top: 41px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+
+color: #FFFFFF;
+
+
+
+/* News */
+
+position: absolute;
+width: 78px;
+height: 43px;
+left: 1052px;
+top: 41px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+
+color: #FFFFFF;
+
+
+
+/* Contact Us */
+
+position: absolute;
+width: 153px;
+height: 43px;
+left: 1180px;
+top: 41px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 43px;
+
+color: #FFFFFF;
+
+
+
+/* Group 7 */
+
+position: absolute;
+width: 571px;
+height: 761px;
+left: 56px;
+top: 196px;
+
+
+
+/* Rectangle 31 */
+
+position: absolute;
+width: 571px;
+height: 761px;
+left: 56px;
+top: 196px;
+
+background: linear-gradient(180deg, rgba(104, 16, 247, 0.92) 0%, rgba(16, 67, 247, 0) 100%);
+border-radius: 20px;
+
+
+/* Rectangle 32 */
+
+position: absolute;
+width: 468px;
+height: 608px;
+left: 109px;
+top: 288px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore */
+
+position: absolute;
+width: 396px;
+height: 573px;
+left: 139px;
+top: 288px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 51px;
+/* or 160% */
+
+color: #000000;
+
+
+
+/* HEADLINES */
+
+position: absolute;
+width: 442px;
+height: 53px;
+left: 107px;
+top: 217px;
+
+font-family: 'Cagliostro';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 51px;
+/* or 107% */
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 33 */
+
+position: absolute;
+width: 728px;
+height: 466px;
+left: 658px;
+top: 203px;
+
+background: linear-gradient(180deg, #612CF7 0%, rgba(44, 89, 247, 0) 100%);
+border-radius: 20px;
+
+
+/* Rectangle 34 */
+
+position: absolute;
+width: 642px;
+height: 393px;
+left: 701px;
+top: 239px;
+
+background: #FDFDFD;
+box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+/* Rectangle 35 */
+
+position: absolute;
+width: 181px;
+height: 130px;
+left: 690px;
+top: 766px;
+
+background: #9EC9FF;
+border: 1px solid #FAFF0E;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+/* Rectangle 36 */
+
+position: absolute;
+width: 181px;
+height: 130px;
+left: 1194px;
+top: 766px;
+
+background: #376BCC;
+border: 1px solid #90F86B;
+box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+/* Rectangle 37 */
+
+position: absolute;
+width: 181px;
+height: 130px;
+left: 942px;
+top: 766px;
+
+background: #229CDF;
+border: 1px solid #000234;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+
+
+/* article 1 */
+
+position: absolute;
+width: 150px;
+height: 58px;
+left: 717px;
+top: 803px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 51px;
+/* or 160% */
+
+color: #020661;
+
+
+
+/* article 2 */
+
+position: absolute;
+width: 148px;
+height: 52px;
+left: 978px;
+top: 803px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 51px;
+/* identical to box height, or 160% */
+
+color: #C0FF0C;
+
+
+
+/* article 3 */
+
+position: absolute;
+width: 150px;
+height: 61px;
+left: 1225px;
+top: 803px;
+
+font-family: 'Bree Serif';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 51px;
+/* or 160% */
+
+color: #FFFFFF;
+
+
+
+/* 🦆 icon "media play" */
+
+position: absolute;
+width: 98.6px;
+height: 98.6px;
+
+
+
+/* Vector */
+
+position: absolute;
+width: 98.6px;
+height: 98.6px;
+
+background: #E31A1A;

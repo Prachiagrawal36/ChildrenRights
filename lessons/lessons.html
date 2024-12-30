@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <style>
+        .custom-navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        body {
+            background-image: url('https://img.freepik.com/free-photo/artistic-blurry-colorful-wallpaper-background_58702-8178.jpg?w=1060&t=st=1694978947~exp=1694979547~hmac=29953948f04287c3b4e5840007e738f6b7420c91649bcf519c4ca98d250afc52');
+            /* Replace with your background image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+
+        .content-div {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content-div::before {
+            content: '';
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: center;
+            transform: scale(1);
+            transition: transform 0.7s ease;
+            /* Smooth transition over 0.3 seconds */
+        }
+
+        .content-div1::before {
+            background-image: url('https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?w=740&t=st=1694972417~exp=1694973017~hmac=47b001a70c673804946bb51f7b817980fe34ab4c50dfba2b3ea198c6c0115036');
+            /* Replace with your image URL */
+        }
+
+        .content-div2::before {
+            background-image: url('https://img.freepik.com/free-vector/organic-flat-world-day-against-child-labour-illustration_23-2148942305.jpg?w=740&t=st=1694976922~exp=1694977522~hmac=795bf1c80f3430405f93802cb3e6a6a98a978ec53e48571a8c76ff0ed7f349ea');
+            /* Replace with your image URL */
+        }
+
+        .content-div3::before {
+            background-image: url('https://d14a823tufvajd.cloudfront.net/images/ZLLtKEYjhRhbNHsK3njd.jpg');
+            /* Replace with your image URL */
+        }
+
+        .content-div:hover::before {
+            transform: scale(1.4);
+            /* Adjust the scale factor as needed */
+        }
+
+        .overlay {
+            opacity: 0;
+            transition: transform 0.7s ease;
+        }
+
+        .overlay:hover {
+            opacity: 1;
+            transform: scale(1)
+        }
+    </style>
+
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Custom CSS for Black Navigation Bar with Opacity and Font -->
+
+
+    <!-- Navigation Bar -->
+    <nav class="custom-navbar p-4">
+        <div class="container mx-auto flex justify-between items-center font-serif">
+            <a href="#"><img src="logo.png" alt="Logo" class="max-h-16 w-auto ml-5"></a>
+            <ul class="flex mr-5 text-xl space-x-9" style="font-family: 'Bree Serif', serif;">
+                <li><a href="../landing-page/index.html" class="text-white hover:underline">Home</a></li>
+                <!-- <li><a href="#" class="text-white hover:underline">Fun and Games</a></li> -->
+                <li class="relative group">
+                    <button type="button" class="text-white hover:underline group focus:outline-none"
+                        id="funAndGamesDropdownButton" aria-haspopup="true" aria-expanded="false">
+                        Fun and Games
+                        <svg class="w-4 h-4 ml-1 inline-block transform transition-transform duration-300 group-hover:rotate-180"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <!-- Dropdown Menu -->
+                    <ul class="absolute hidden w-11/12 mt-2 py-2 bg-white text-gray-800 border border-gray-200 rounded-lg shadow-lg z-10"
+                        aria-labelledby="funAndGamesDropdownButton">
+                        <li><a href="lessons.html" class="block px-4 py-2 hover:bg-gray-200">>Lessons</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">>challenges</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">>Rewards</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="text-white hover:underline">News</a></li>
+                <li><a href="#" class="text-white hover:underline">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Centered White Rectangular Div -->
+    <div class="flex items-center justify-center h-screen">
+        <div class="bg-gradient-to-br from-purple-500 w-9/12 h-5/6 rounded-3xl flex items-center justify-center">
+
+            <div
+                class="bg-gradient-to-tl from-indigo-800 w-11/12 h-5/6 mt-6 overflow-y-scroll py-12 px-12 cursor-pointer">
+                <!-- Content for the Lessons Page that exceeds the container height -->
+                <!-- Add enough content here to make the div scrollable -->
+                <div class="flex w-full h-full my-8">
+                    <!-- Two Divs Side by Side -->
+                    <div
+                        class=" w-1/2 h-full mx-3 my-3 border-2 border-blue-300 rounded-xl content-div content-div1 flex">
+                        <!-- Content for the Left Div -->
+                        <div class="w-full h-full z-10 overlay bg-gradient-to-t from-white ">
+                            <a href="#" class="w-full h-1/2 absolute bottom-0 p-6 text-2xl"
+                                style="font-family: 'Baloo Bhaina 2', cursive;">
+                                Children have the fundamental right to quality education, ensuring their growth,
+                                development, and a brighter future. Equal access is vital.
+                            </a>
+                        </div>
+                        <!-- Hidden Pop-up Div with Video Player -->
+                        <div
+                            class="popup-video hidden w-full h-full flex items-center justify-center bg-black bg-opacity-75">
+                            <div class="relative max-w-2xl w-full h-3/4">
+                                <!-- Video Embed Code (Replace with your video source) -->
+                                <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen
+                                    class="absolute inset-0 w-full h-full"></iframe>
+                                <!-- Close Button -->
+                                <!-- Close Button -->
+                                <button class="absolute top-4 right-4 text-white text-2xl cursor-pointer"
+                                    onclick="closePopup(this)">✕</button>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class=" w-1/2 h-full mx-3 my-3 border-2 border-blue-300 rounded-xl content-div content-div2 flex">
+                        <!-- Content for the Left Div -->
+                        <div class="w-full h-full z-10 overlay bg-gradient-to-t from-white ">
+                            <a href="#" class="w-full h-1/2 absolute bottom-0 p-6 text-2xl"
+                                style="font-family: 'Baloo Bhaina 2', cursive;">
+                                World Day Against Child Labour raises awareness about the 152 million children engaged
+                                in child labor worldwide, urging action to protect their rights and provide education.
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="flex w-full h-full my-8">
+                    <!-- Two Divs Side by Side -->
+                    <div
+                        class=" w-1/2 h-full mx-3 my-3 border-2 border-blue-300 rounded-xl content-div content-div3 flex">
+                        <!-- Content for the Left Div -->
+                        <div class="w-full h-full z-10 overlay bg-gradient-to-t from-white ">
+                            <a href="#" class="w-full h-1/2 absolute bottom-3 p-6 text-2xl"
+                                style="font-family: 'Baloo Bhaina 2', cursive;">
+                                The Protection of Children from Sexual Offences (POCSO) Act is a legal framework in
+                                India aimed at safeguarding children from sexual abuse and exploitation, ensuring their
+                                protection.
+
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class=" w-1/2 h-full mx-3 my-3 border-2 border-blue-300 rounded-xl content-div content-div4 flex">
+                        <!-- Content for the Left Div -->
+                        <div class="w-full h-full z-10 overlay bg-gradient-to-t from-white ">
+                            <a href="#" class="w-full h-1/2 absolute bottom-0 p-6 text-2xl"
+                                style="font-family: 'Baloo Bhaina 2', cursive;">
+
+                            </a>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    // JavaScript to toggle the dropdown
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownButton = document.getElementById('funAndGamesDropdownButton');
+        const dropdownMenu = document.querySelector('[aria-labelledby="funAndGamesDropdownButton"]');
+        let isDropdownOpen = false;
+
+        dropdownButton.addEventListener('click', function () {
+            isDropdownOpen = !isDropdownOpen;
+            dropdownMenu.classList.toggle('hidden', !isDropdownOpen);
+            dropdownButton.setAttribute('aria-expanded', isDropdownOpen.toString());
+        });
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', function (event) {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+                isDropdownOpen = false;
+                dropdownButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+</script>
+<script>
+    function openPopup(popup) {
+        popup.style.display = 'block';
+    }
+
+    function closePopup(button) {
+        const popup = button.parentElement;
+        popup.style.display = 'none';
+    }
+
+    // Attach click event listeners to open and close pop-up divs
+    document.querySelectorAll('.content-div').forEach(function (contentDiv) {
+        contentDiv.addEventListener('click', function () {
+            openPopup(this.querySelector('.popup-video'));
+        });
+    });
+
+    document.querySelectorAll('.popup-video button').forEach(function (closeButton) {
+        closeButton.addEventListener('click', function () {
+            closePopup(this);
+        });
+    });
+</script>
+
+
+
+</html>

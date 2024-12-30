@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    /* Style for the dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-items{
+        color: black;
+    }
+
+    .dropbtn{
+     color: white;
+     background-color: black;
+     border: 0px;
+     font-size: 20px;
+    }
+</style>
+
+<body>
+    <section>
+        <nav class="navbar">
+      <div class="navLeft">
+
+      </div>
+      <div class="navRight">
+    <a href="#" class="home">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Fun and Games</button>
+        <div class="dropdown-content">
+            <a class=" dropdown-items" href="../lessons/lessons.html">Lessons</a>
+            <a  class=" dropdown-items" href="#">Challenges</a>
+            <a  class=" dropdown-items" href="../rewards/index.html">Rewards</a>
+        </div>
+    </div>
+    <a href="../news-section/index.html" class="news">News</a>
+    <a href="" class="contact">Contact Us</a>
+      </div>
+        </nav>
+    </section>
+
+    <section>
+
+        <div class="sky-container">
+            <div class="star"></div>
+            <div class="star1"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+          </div>
+          
+          <div class="border"></div>
+
+
+
+        <div class="hero">
+            <div class="left">
+           <div class="logoInBody"></div>
+           <div class="heading">
+            <h1 class="text typewriter">WELCOME</h1>
+            <h1 class="typewriter">YOUNG LEARNER,</h1>
+           </div>
+           <div class="desc">
+            <h3>Are you ready to learn your rights the right way?</h3>
+            <h3>Get started by clicking on the fun and games section</h3>
+            <h3> and explore for yourself the realm of law and justice.</h3>
+           </div>
+            </div>
+            <div class="right image-container">
+                <img src="./owls.gif" id="gif" alt="" width="300px">
+            </div>
+        </div>
+    </section>
+
+    
+    <script>
+        // JavaScript to handle dropdown menu clicks
+        const dropdown = document.querySelector(".dropdown");
+        const dropdownContent = document.querySelector(".dropdown-content");
+
+        dropdown.addEventListener("click", function () {
+            dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+        });
+
+        // Close the dropdown when clicking outside of it
+        window.addEventListener("click", function (event) {
+            if (!event.target.matches(".dropbtn")) {
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                }
+            }
+        });
+    </script>
+</body>
+</html>l

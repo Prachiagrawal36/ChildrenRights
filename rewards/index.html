@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reward Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+<!-- Custom CSS for Black Navigation Bar with Opacity and Font -->
+<style>
+    .custom-navbar {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    body {
+        background-image: url('backimg.webp'); /* Replace with your background image path */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    
+</style>
+
+<!-- Navigation Bar -->
+<nav class="custom-navbar p-4" >
+    <div class="container mx-auto flex justify-between items-center font-serif">
+        <a href="#"><img src="logo.png" alt="Logo" class="max-h-16 w-auto ml-5"></a>
+        <ul class="flex mr-5 text-xl space-x-9" style="font-family: 'Bree Serif', serif;">
+            <li><a href="../landing-page/index.html" class="text-white hover:underline">Home</a></li>
+            <!-- <li><a href="#" class="text-white hover:underline">Fun and Games</a></li> -->
+            <li class="relative group">
+                <button
+                    type="button"
+                    class="text-white hover:underline group focus:outline-none"
+                    id="funAndGamesDropdownButton"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                >
+                    Fun and Games
+                    <svg
+                        class="w-4 h-4 ml-1 inline-block transform transition-transform duration-300 group-hover:rotate-180"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M19 9l-7 7-7-7"
+                        ></path>
+                    </svg>
+                </button>
+                <!-- Dropdown Menu -->
+                <ul
+                    class="absolute hidden w-11/12 mt-2 py-2 bg-white text-gray-800 border border-gray-200 rounded-lg shadow-lg z-10"
+                    aria-labelledby="funAndGamesDropdownButton"
+                >
+                    <li><a href="../lessons/lessons.html" class="block px-4 py-2 hover:bg-gray-200">>Lessons</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">>challenges</a></li>
+                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">>Rewards</a></li>
+                </ul>
+            </li>
+            <li><a href="../news-section/index.html" class="text-white hover:underline">News</a></li>
+            <li><a href="#" class="text-white hover:underline">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="headings" style="display: flex;justify-content: center;align-items: center;">
+    <div class="rewards" style="margin-top: 40px;margin-right: 220px;font-size: 5rem;font-family: sans-serif;color: rgb(217, 255, 0);">Rewards</div>
+    <div class="progress" style="margin-top: 40px;margin-left: 220px;font-size: 5rem;font-family: sans-serif;color: rgb(217, 255, 0);">Progress</div>
+</div>
+<div class="hero" style="display: flex;justify-content: center;align-items: center;">
+<!-- Two-Column Signup Form -->
+
+<div class="container mx-auto mt-8 bg-gradient-to-b from-white rounded-lg shadow-lg max-w-3xl  flex signup" style="display:flex; justify-content: center;align-items: center;height: 30rem;width: 40rem;">
+    <!-- Left Column with Solid Color -->
+    <!-- Right Column with Form -->
+    <div class="back rounded-lg shadow-lg" style="background-image: url('star.png');background-size: cover;">
+        <div class="w-2/3 py-5 px-16 rounded-lg" style="margin-top:80px 170px; height: 25rem;width: 100%;background-color: rgba(173, 58, 255, 0.71); border-width:2px; border-color:rgb(241, 248, 48) ;color: rgb(217, 255, 0);">
+        
+            <div class="mb-4">
+                <!-- Name Input Field with Placeholder -->
+                <p style="font-family: 'Baloo Bhaina 2', cursive;font-size: 27px;margin-top: 50px;">You have become a gladiator</p>
+                <br>
+                <p style="font-family: 'Baloo Bhaina 2', cursive;font-size: 27px;">You have become a gladiator</p>
+                <br>
+                <p style="font-family: 'Baloo Bhaina 2', cursive;font-size: 27px;">You have become a gladiator</p>
+                <br>
+                <p style="font-family: 'Baloo Bhaina 2', cursive;font-size: 27px;">You have become a gladiator</p>
+            </div> 
+        </div>
+    </div>  <!-- Already Signed Up? Sign In Link -->
+</div>
+    <div class="w-1/3  rounded-lg flex flex-col bg-gradient-to-b from-#3c8797a8 shadow-lg max-w-3xl justify-center" style="background-color: #3c8797a8;margin-left: 70px;margin-top: 32px; margin-right: 4rem; height: 30rem; width: 40rem;align-items: center;">
+        <!-- Content for the left side -->
+        <div class="back2 rounded-lg shadow-lg" style=" background-image: url('kid\ back.avif');background-size: cover;width: 75%;justify-content: center;align-items: center;">
+            <div class="w-2/3 py-5 px-16 rounded-lg" style="margin-top:80px 170px; height: 25rem;width: 100%;border-width:2px; border-color:rgb(225, 207, 40) ;background-color: rgba(240, 255, 255, 0.737);">
+                <div class="text-center text-black text-3xl font-extrabold" style="font-family: 'Baloo Bhaina 2', cursive;margin-top: 40px;">Congratulations! !<br></div>
+                <br>
+                <div class="text-center text-black text-3xl font-light" style="font-family: 'Baloo Bhaina 2', cursive;margin-top: 60px;">You have completed 1 out of 3 lessons</div>
+             </div>
+         </div>
+    </div>
+</div>
+<div class="foot" style="display: flex; align-items: center; ">
+    <div class="mb-4">
+        <button type="submit" formaction="../landing-page/index.html" class=" mx-10 bg-white text-black py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out" style="margin-left:10rem; margin-right: 60rem; margin-top: 5rem;margin-bottom: 15px;">Go to Home</button>
+    </div>
+    <div class="mb-4">
+</div>
+
+    <button type="submit" class=" mx-10 bg-white text-black py-2 px-4 rounded-lg hover:bg-blue-600 transition duration-300 ease-in-out" style="margin-top: 3.1rem;">Continue</button>
+</div>
+
+</body>
+
+<script>
+    // JavaScript to toggle the dropdown
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownButton = document.getElementById('funAndGamesDropdownButton');
+        const dropdownMenu = document.querySelector('[aria-labelledby="funAndGamesDropdownButton"]');
+        let isDropdownOpen = false;
+
+        dropdownButton.addEventListener('click', function () {
+            isDropdownOpen = !isDropdownOpen;
+            dropdownMenu.classList.toggle('hidden', !isDropdownOpen);
+            dropdownButton.setAttribute('aria-expanded', isDropdownOpen.toString());
+        });
+
+        // Close the dropdown when clicking outside of it
+        document.addEventListener('click', function (event) {
+            if (!dropdownButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.add('hidden');
+                isDropdownOpen = false;
+                dropdownButton.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* Style for the dropdown menu */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 120px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown-items{
+        color: black;
+    }
+
+    .dropbtn{
+     color: white;
+     background-color: black;
+     border: 0px;
+     font-size: 20px;
+    }
+</style>
+<body>
+    <section>
+        <nav class="navbar">
+            <div class="navLeft">
+      
+            </div>
+            <div class="navRight">
+          <a href="../landing-page/index.html" class="home">Home</a>
+          <div class="dropdown">
+              <button class="dropbtn">Fun and Games</button>
+              <div class="dropdown-content">
+                  <a class=" dropdown-items" href="../lessons/lessons.html">Lessons</a>
+                  <a  class=" dropdown-items" href="#">Challenges</a>
+                  <a  class=" dropdown-items" href="../rewards/index.html">Rewards</a>
+              </div>
+          </div>
+          <a href="../news-section/index.html" class="news">News</a>
+          <a href="" class="contact">Contact Us</a>
+            </div>
+              </nav>
+    </section>
+
+    <section class="hero">
+       <div class="heroLeft">
+        <h1 id="news-title">NEWS CORNER-Under Construction</h1>
+        <div class="container">
+    
+            <div class="card">
+             <div class="front">
+                <img id="gif1" src="./cartoon.gif" alt="" width="300px">
+             </div>
+             <div class="back">
+                <h1>=>Lorem ipsum dolor sit </h1>
+                <h1>=>amet consectetur adipisicing.</h1>
+                <h1>=>elit. Officia impedit tempore dolorem?</h1>
+                <h1>=>natus voluptatibus deleniti adipisci</h1>
+                <h1>=>Hic vitae ipsum quo,</h1>
+                <h1>=>asperiores iusto molestias consectetur</h1>
+             </div>
+            </div>
+        </div>
+    
+
+       </div>
+       <div class="heroRight">
+        <div class="top">
+            <div class="container2">
+                <h1>Watch a video instead ?</h1>
+                <div class="card2">
+                 
+                </div>
+        </div>
+        <div class="bottom">
+            <div class="articles">
+            <div class="article1 article">
+                <div class="article-body">
+                    <h2 class="name">Article 1</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="read">Article 1</button>
+            </div>
+            </div>
+          
+            <div class="article2 article">
+                <div class="article-body">
+                    <h2 class="name">Article 1</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="read">Article 2</button>
+            </div>
+            </div>
+            <div class="article3 article">
+                <div class="article-body">
+                    <h2 class="name">Article 1</h2>
+                    <h6 class="des">Lorem ipsum dolor sit amet consectetur.</h6>
+                    <button class="read">Article 3</button>
+            </div>
+            </div>
+        </div>
+        </div>
+       </div>
+    </section>
+</body>
+    
+<script>
+    // JavaScript to handle dropdown menu clicks
+    const dropdown = document.querySelector(".dropdown");
+    const dropdownContent = document.querySelector(".dropdown-content");
+
+    dropdown.addEventListener("click", function () {
+        dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    });
+
+    // Close the dropdown when clicking outside of it
+    window.addEventListener("click", function (event) {
+        if (!event.target.matches(".dropbtn")) {
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            }
+        }
+    });
+</script>
+</html>
